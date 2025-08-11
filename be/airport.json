@@ -1,0 +1,296 @@
+[
+  {
+    "id": "/m/0hn4h",
+    "type": "other",
+    "title": "Ho Chi Minh City, Vietnam",
+    "subtitle": "City in Vietnam",
+    "city": "Ho Chi Minh City",
+    "distance": null,
+    "list": [
+      {
+        "id": "SGN",
+        "type": "airport",
+        "title": "Tan Son Nhat International Airport",
+        "subtitle": "1 mi to destination",
+        "city": "Ho Chi Minh City",
+        "distance": "1 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/06y57",
+    "type": "other",
+    "title": "Sydney, Australia",
+    "subtitle": "City in Australia",
+    "city": "Sydney",
+    "distance": null,
+    "list": [
+      {
+        "id": "SYD",
+        "type": "airport",
+        "title": "Sydney Airport",
+        "subtitle": "5 mi to destination",
+        "city": "Sydney",
+        "distance": "5 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/0fz25",
+    "type": "other",
+    "title": "Sydney, Nova Scotia, Canada",
+    "subtitle": "City in Cape Breton Island, Nova Scotia",
+    "city": "Sydney",
+    "distance": null,
+    "list": [
+      {
+        "id": "YQY",
+        "type": "airport",
+        "title": "J.A. Douglas McCurdy Sydney Airport",
+        "subtitle": "7 mi to destination",
+        "city": "Sydney",
+        "distance": "7 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/05rmx2",
+    "type": "other",
+    "title": "North Sydney, Nova Scotia, Canada",
+    "subtitle": "Town in Cape Breton Island, Nova Scotia",
+    "city": "North Sydney",
+    "distance": null,
+    "list": [
+      {
+        "id": "YQY",
+        "type": "airport",
+        "title": "J.A. Douglas McCurdy Sydney Airport",
+        "subtitle": "10 mi to destination",
+        "city": "Sydney",
+        "distance": "10 mi"
+      },
+      {
+        "id": "YHZ",
+        "type": "airport",
+        "title": "Halifax Stanfield International Airport",
+        "subtitle": "182 mi to destination",
+        "city": "Halifax",
+        "distance": "182 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/07p15b",
+    "type": "other",
+    "title": "North Sydney Council, Australia",
+    "subtitle": null,
+    "city": "North Sydney Council",
+    "distance": null,
+    "list": [
+      {
+        "id": "SYD",
+        "type": "airport",
+        "title": "Sydney Airport",
+        "subtitle": "7 mi to destination",
+        "city": "Sydney",
+        "distance": "7 mi"
+      },
+      {
+        "id": "WOL",
+        "type": "airport",
+        "title": "Shellharbour Airport",
+        "subtitle": "55 mi to destination",
+        "city": "Wollongong",
+        "distance": "55 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/010nkf",
+    "type": "other",
+    "title": "Hampden Sydney, Virginia",
+    "subtitle": "Census-designated place in Virginia",
+    "city": "Hampden Sydney",
+    "distance": null,
+    "list": [
+      {
+        "id": "RIC",
+        "type": "airport",
+        "title": "Richmond International Airport",
+        "subtitle": "64 mi to destination",
+        "city": "Richmond",
+        "distance": "64 mi"
+      },
+      {
+        "id": "LYH",
+        "type": "airport",
+        "title": "Lynchburg Regional Airport",
+        "subtitle": "42 mi to destination",
+        "city": "Lynchburg",
+        "distance": "42 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/0chgzm",
+    "type": "other",
+    "title": "Melbourne, Australia",
+    "subtitle": "City in Australia",
+    "city": "Melbourne",
+    "distance": null,
+    "list": [
+      {
+        "id": "MEL",
+        "type": "airport",
+        "title": "Melbourne Airport",
+        "subtitle": "11 mi to destination",
+        "city": "Melbourne",
+        "distance": "11 mi"
+      },
+      {
+        "id": "AVV",
+        "type": "airport",
+        "title": "Avalon Airport",
+        "subtitle": "31 mi to destination",
+        "city": "Melbourne",
+        "distance": "31 mi"
+      },
+      {
+        "id": "MEB",
+        "type": "airport",
+        "title": "Essendon Fields Airport",
+        "subtitle": "6 mi to destination",
+        "city": "Melbourne",
+        "distance": "6 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/0rhp6",
+    "type": "other",
+    "title": "Melbourne, Florida",
+    "subtitle": "City in Florida",
+    "city": "Melbourne",
+    "distance": null,
+    "list": [
+      {
+        "id": "MCO",
+        "type": "airport",
+        "title": "Orlando International Airport",
+        "subtitle": "48 mi to destination",
+        "city": "Orlando",
+        "distance": "48 mi"
+      },
+      {
+        "id": "MLB",
+        "type": "airport",
+        "title": "Melbourne Orlando International Airport",
+        "subtitle": "2 mi to destination",
+        "city": "Melbourne",
+        "distance": "2 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/05p4mr",
+    "type": "other",
+    "title": "Melbourne, United Kingdom",
+    "subtitle": "Town in England",
+    "city": "Melbourne",
+    "distance": null,
+    "list": [
+      {
+        "id": "BHX",
+        "type": "airport",
+        "title": "Birmingham Airport",
+        "subtitle": "29 mi to destination",
+        "city": "Birmingham",
+        "distance": "29 mi"
+      },
+      {
+        "id": "EMA",
+        "type": "airport",
+        "title": "East Midlands Airport",
+        "subtitle": "4 mi to destination",
+        "city": "Nottingham",
+        "distance": "4 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/0538q0",
+    "type": "other",
+    "title": "Melbourne, Quebec, Canada",
+    "subtitle": "Township in Québec, Canada",
+    "city": "Melbourne",
+    "distance": null,
+    "list": [
+      {
+        "id": "YUL",
+        "type": "airport",
+        "title": "Montréal-Pierre Elliott Trudeau International Airport",
+        "subtitle": "74 mi to destination",
+        "city": "Montreal",
+        "distance": "74 mi"
+      },
+      {
+        "id": "YHU",
+        "type": "airport",
+        "title": "Montreal Metropolitan Airport",
+        "subtitle": "58 mi to destination",
+        "city": "Montreal",
+        "distance": "58 mi"
+      }
+    ]
+  },
+  {
+    "id": "/m/0qtst",
+    "type": "other",
+    "title": "Melbourne, Arkansas",
+    "subtitle": "City in Arkansas",
+    "city": "Melbourne",
+    "distance": null,
+    "list": [
+      {
+        "id": "MEM",
+        "type": "airport",
+        "title": "Memphis International Airport",
+        "subtitle": "129 mi to destination",
+        "city": "Memphis",
+        "distance": "129 mi"
+      },
+      {
+        "id": "LIT",
+        "type": "airport",
+        "title": "Bill and Hillary Clinton National Airport",
+        "subtitle": "93 mi to destination",
+        "city": "Little Rock",
+        "distance": "93 mi"
+      },
+      {
+        "id": "SGF",
+        "type": "airport",
+        "title": "Springfield-Branson National Airport",
+        "subtitle": "116 mi to destination",
+        "city": "Springfield",
+        "distance": "116 mi"
+      },
+      {
+        "id": "JBR",
+        "type": "airport",
+        "title": "Jonesboro Municipal Airport",
+        "subtitle": "72 mi to destination",
+        "city": "Jonesboro",
+        "distance": "72 mi"
+      },
+      {
+        "id": "HRO",
+        "type": "airport",
+        "title": "Boone County Regional Airport",
+        "subtitle": "71 mi to destination",
+        "city": "Harrison",
+        "distance": "71 mi"
+      }
+    ]
+  }
+]
