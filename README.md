@@ -7,6 +7,12 @@ An intelligent flight search chatbot powered by OpenAI's GPT models and real-tim
 ![Next.js](https://img.shields.io/badge/Next.js-15.4.6-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)
 
+## 🎬 Demo
+
+https://github.com/user-attachments/assets/demo.mov
+
+*Watch the AI chatbot in action - from natural language queries to real-time flight results with streaming responses and intelligent tool calling.*
+
 ## ✨ Features
 
 - 🤖 **AI-Powered Conversations**: Natural language flight search using OpenAI GPT models
