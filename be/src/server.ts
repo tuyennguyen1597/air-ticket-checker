@@ -5,6 +5,7 @@ import { getCountryCodes } from "./api/get-location";
 import { getAirportInfo } from "./api/search-airport";
 import { getFlightInfo } from "./api/get-flight-info";
 import { chat } from "./api/openai/chat";
+import { chatStream } from "./api/openai/chat-stream";
 
 dotenv.config();
 
@@ -39,6 +40,12 @@ app.post("/chat", async (req, res) => {
   const response = await chat(req.body);
   res.status(200).json(response);
 });
+
+app.post("/chat-stream", async (req, res) => {
+  const { newMessage, history } = req.body;
+  await chatStream({ response: res, newMessage, history });
+});
+
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 app.listen(port, () => {

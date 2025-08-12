@@ -40,19 +40,12 @@ const getFlightInfoFromRapid = async (
     return response.data;
   }
 
-  const parsedResponse = rapidGetFlightResponseSchema.safeParse(response.data);
-  if (!parsedResponse.success) {
-    console.log("Invalid response for getFlightInfo", parsedResponse.error);
-    return response.data;
-  }
-
-  return parsedResponse.data;
+  return response.data;
 };
 
 export const getFlightInfo = async (
   params: Partial<Ticket> & Pick<Ticket, "from" | "to" | "startDate">
 ) => {
-  console.log("params", params);
   const ticket = ticketSchema.parse(params);
 
   const fromAirportInfo = await getAirportInfo(ticket.from);
@@ -62,13 +55,12 @@ export const getFlightInfo = async (
     throw new Error("Airport not found");
   }
 
-  console.log("fromAirportInfo", fromAirportInfo.list[0].id);
-  console.log("toAirportInfo", toAirportInfo.list[0].id);
-
   return getFlightInfoFromRapid({
     departure_id: fromAirportInfo.list[0].id,
     arrival_id: toAirportInfo.list[0].id,
-    outbound_date: ticket.startDate,
+    outbound_date: ticket.startDate
+      ? ticket.startDate
+      : new Date().toISOString().split("T")[0],
     ...(ticket.endDate && { return_date: ticket.endDate }),
     travel_class: ticket.travelClass,
     adults: ticket.adults,

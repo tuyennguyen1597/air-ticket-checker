@@ -5,9 +5,11 @@ import {
   ChatCompletionMessageFunctionToolCall,
 } from "openai/resources/index";
 import dotenv from "dotenv";
-import { flightToolPrompt } from "./tool_prompt";
+import { flightToolPrompt } from "./prompts/tool_prompt";
 import { getFlightInfo } from "../get-flight-info";
 import { RapidGetFlightResponse } from "../../schema/flights";
+import { assistantPrompt } from "./prompts/assistant-prompt";
+import { getFlightToolContent } from "./helpers/get-flight-tool-content";
 
 dotenv.config();
 const OPENAI_MODEL = process.env.OPEN_AI_MODEL;
@@ -23,10 +25,11 @@ export const chat = async ({
   if (!OPENAI_API_KEY || !OPENAI_MODEL) {
     throw new Error("OPENAI_API_KEY is not set");
   }
+
   const messages: ChatCompletionMessageParam[] = [
     {
       role: "assistant",
-      content: systemPrompt(),
+      content: assistantPrompt(),
     },
     ...history,
     newMessage,
@@ -35,15 +38,11 @@ export const chat = async ({
     apiKey: OPENAI_API_KEY,
   });
 
-  console.log("messages", flightToolPrompt());
-
   let response = await openai.chat.completions.create({
     model: OPENAI_MODEL,
     messages,
     tools: [flightToolPrompt()],
   });
-
-  console.log("response", response);
 
   if (response.choices[0].finish_reason === "tool_calls") {
     const toolMessage = response.choices[0].message;
@@ -69,7 +68,6 @@ const handleToolCall = async (
   if (!toolCall) {
     return undefined;
   }
-  const toolName = toolCall.function.name;
 
   const toolArgs = JSON.parse(toolCall.function.arguments);
 
@@ -77,27 +75,11 @@ const handleToolCall = async (
     toolArgs
   );
 
-  const content = !flightInfo?.data?.itineraries?.topFlights?.[0]
-    ? "No flight information found"
-    : `Analyse the information from ${JSON.stringify(
-        flightInfo.data?.itineraries?.topFlights
-      )} and provide a short summary of the flight details for the user about what they asked.
-    Can ask them if they want to know more about the flight details.
-    If they want to know more, you can use the getFlightInfo tool again.`;
+  const content = getFlightToolContent(flightInfo);
   console.log("content", content);
   return {
     role: "tool",
     content,
     tool_call_id: toolCall.id,
   } as ChatCompletionMessageParam;
-};
-
-const systemPrompt = () => {
-  return `
-  You are a helpful assistant for an AI travel assistant.
-  Give short, courteous answers, no more than 2 sentences. 
-  If you are asked to provide a flight price, you can use the getFlightInfo tool to get the price.
-  Always check if user need any other information.
-  Always be accurate. If you don't know the answer, say so.
-  `;
 };
